@@ -1,0 +1,171 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("desk3.jpg");
+    background-size: 100vmax 100vmax;
+}
+
+header {
+    font-size: 4vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vmax;
+    text-shadow: .4vmax .4vmax 1vmax darkgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5vmax;
+    box-shadow: .5vmax .5vmax 1vmax .3vmax silver;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 33vmax;
+    height: 62vmax;
+    background-color: black;
+    border-radius: 2.5vmax;
+    box-shadow: .5vmax .5vmax 1vmax #363131;
+    padding-bottom: 3vmax;
+}
+
+.infoContainer {
+    height: 20vmax;
+    width: 30vmax;
+    display: flex;
+}
+
+.infoPane {
+    width: 15vmax;
+    height: 2vmax;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.2vmax;
+    border-radius: 2.5vmax;
+    padding-top: 1.5vmax;
+}
+
+.infoPane2 {
+    width: 15vmax;
+    height: 2vmax;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 1.2vmax;
+    border-radius: 2.5vmax;
+    padding-top: 1.5vmax;
+}
+
+.inputReadout {
+    width: 30vmax;
+    height: 5vmax;
+    font-size: 2.5vmax;
+    color: white;
+}
+
+.display {
+    height: 20vmax;
+    width: 30vmax;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 6.5vmax;
+}
+
+.buttons {
+    position: relative;
+    width: 32vmax;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .6vmax;
+    text-align: center;
+}
+
+button {
+    border: solid black;
+    border-radius: 35px;
+    height: 7vmax;
+    width: 7vmax;
+    font-size: 2.8vmax;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero {
+    width: 14vmax;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.decimal {
+    background-color: #5B5B5B;
+    color: white;
+}
+
+.divide,
+.multiply,
+.subtract,
+.add,
+.equals {
+    background-color: #FFA811;
+    color: white;
+}
+
+.allClear,
+.backspace,
+.clearDis {
+    color: black;
+    background-color: lightgray;
+}
+
+.whitebar {
+    position: relative;
+    height: 0;
+    width: 11vmax;
+    border: solid .2vmax white;
+    border-radius: 5vmax;
+    top: 2.2vmax;
+}
+
+.backspace {
+    font-size: 1.7vmax;
+}
+
+footer {
+    padding: 3vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
