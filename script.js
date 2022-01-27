@@ -20,19 +20,19 @@ let keyFired = false;
 
 // *****MATHEMATICAL FUNCTIONS***** //
 function add(...args) {
-    return Number((args.reduce((total, current) => total + current, 0))).toFixed(3);
+    return Number((args.reduce((total, current) => total + current, 0)).toFixed(3));
 };
 
 function subtract(num1, ...args) {
-    return Number((args.reduce((total, current) => total - current, num1))).toFixed(3);
+    return Number((args.reduce((total, current) => total - current, num1)).toFixed(3));
 };
 
 function multiply(...args) {
-    return Number((args.reduce((incrementer, next) => incrementer * next, 1))).toFixed(3);
+    return Number((args.reduce((incrementer, next) => incrementer * next, 1)).toFixed(3));
 };
 
 function divide(num1, ...args) {
-    return Number((args.reduce((incrementer, next) => incrementer / next, num1))).toFixed(3);
+    return Number((args.reduce((incrementer, next) => incrementer / next, num1)).toFixed(3));
 };
 
 
