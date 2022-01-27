@@ -32,7 +32,14 @@ function multiply(...args) {
 };
 
 function divide(num1, ...args) {
-    return Number((args.reduce((incrementer, next) => incrementer / next, num1)).toFixed(3));
+    let result = Number((args.reduce((incrementer, next) => incrementer / next, num1)).toFixed(3));
+
+    if (result === Infinity || result === -Infinity) {
+        return "You can't ÷ by 0!";
+    } else {
+        return result;
+    }
+
 };
 
 
@@ -50,13 +57,9 @@ function operate(operator, ...args) {
     } else if (operator === '*' || operator === multiply) {
         return multiply(...args);
     } else if (operator === '/' || operator === divide || operator === '÷') {
-        if (divide(...args) === "Infinity" || divide(...args) === "-Infinity") {
-            return "You can't do that...";
-        } else {
-            return divide(...args);
-        }
+        return divide(...args);
     } else {
-        return "Error - Press AC"
+        return "Error: Click AC or Press 'A' key";
     }
 }
 
